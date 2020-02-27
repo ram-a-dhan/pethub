@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Pet Form</title>
+</head>
+<body>
+    <form method="POST" action="/admin/add">
+        <label>Pet Name : </label><br>
+        <input type="text" name="name" placeholder="e.g. Johny Koplo"><br>
+        <label> Pet Type : </label><br>
+        
+        <select name="type">
+            <option value="dog" > Dog </option>
+            <option value="cat" > Cat </option>
+        </select><br>
+
+
+        <label> Is Independent </label><br>
+        <input type="radio" id="male" name="isIndependent" value=true>
+        <label for="male">Yes</label>
+        <input type="radio" id="female" name="isIndependent" value=false>
+        <label for="female">No</label><br>
+        <label> Is Spacious</label><br>
+        <input type="radio" id="male" name="isSpacious" value=true>
+        <label for="male">Yes</label>
+        <input type="radio" id="female" name="isSpacious" value=false>
+        <label for="female">No</label><br>
+        <label> Is Friendly</label><br>
+        <input type="radio" id="male" name="isFriendly" value=true>
+        <label for="male">Yes</label>
+        <input type="radio" id="female" name="isFriendly" value=false>
+        <label for="female">No</label><br>
+        
+        <label> Picture Url:</label><br>
+        <input type="text" name="picture"><br>
+
+        <label> Gender : </label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+
+        <label> Age: </label><br>
+        <input type="number" name="age"><br>
+        
+        <label> Contact Number: </label><br>
+        <input type="text" name="contactNumber"><br>
+        
+
+        <label>Description</label><br>
+        <textarea name="description" placeholder="describe your beloved partner..."></textarea><br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>
