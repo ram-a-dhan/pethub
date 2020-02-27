@@ -14,7 +14,6 @@ app.listen(port,()=>{
 
 
 
-
 const adminRouter = require ('./routes/admin_router')
 app.use('/admin', adminRouter)
 
