@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Beloved Partner To Be is Here </title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Partner ID</td>
+            <td>Partner Name</td>
+            <td>Partner Type</td>
+            <td>Independent</td>
+            <td>Need Big Space</td>
+            <td>Sociable?</td>
+            <td>Gender</td>
+            <td>Actions</td>
+        </tr>
+        <% data.forEach(element=>{ %>
+            <tr>
+                <td> <%= element.id %> </td>
+                <td> <%= element.name %> </td>
+                <td> <%= element.type %> </td>
+                <td> <%= element.isIndependent %> </td>
+                <td> <%= element.isSpacious %> </td>
+                <td> <%= element.isFriendly %> </td>
+                <td> <%= element.gender %> </td>
+                <td> <a href="/users/petList/<%=element.id %>"> See More  </a>
+                </td>
+            </tr>
+        <% })   %>
+    </table>
+</body>
+</html>

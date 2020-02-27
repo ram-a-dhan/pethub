@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <%= JSON.stringify(data)%>
+    <div class="container">
+        <div class="row">
+            <div class="col1">  
+                <h1> Hello, My Name is <%=data.name%></h1>
+                <img src="<%=data.picture%>" >
+            </div>
+            <div class="col1" style="color: white;"> pemisah </div>
+            <div class="col1"> 
+                <br>
+                <br>
+                    <h1> About <%=data.name%></h1>
+                    <li> <%= data.isIndependent==true ? "Iam highly independent." : "i need lot of your attention." %> </li>
+                    <li> <%= data.isSpacious==true ? "I need to run around." : "i could live in a small envirnment." %></li>
+                    <li> <%= data.isFriendly==true ? "Iam comfortable around people." : "I feel insecure around lot of people." %> </li>
+                    <li> <%= data.gender %>, <%= data.age%> Years Old</li>
+                    
+                    <br>
+                     <p style="word-wrap: break-word; width:500px;">  <%=data.description%> </p> 
+                     <a href=""> Pick Me! </a>
+                    
+            </div>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
