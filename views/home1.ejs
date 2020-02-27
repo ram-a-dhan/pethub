@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PetHub</title>
+    <%- include('partials/style') %>
+</head>
+<body>
+    <%- include ('./partials/navbarAdm')  %>
+    <div class="container mx-auto">
+        <h1>How Are you today?</h1>
+        <h3>Login as Admin</h3>
+        <form action="/adminLogin" method="POST">
+        <label>Username</label>
+        <input type="text" name="username">
+        <label>Password</label>
+        <input type="password" name="password">
+        <input type="submit" value="Log In">
+        </form>
+
+    </div>
+</body>
+</html>

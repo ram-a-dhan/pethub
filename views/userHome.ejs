@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>PetHub</title>
+    <%- include('partials/style') %>
+</head>
+<body>
+    <div class="container mx-auto">
+        <h1>PetHub Login</h1>
+        <a href="/user/register" class="btn btn-dark">  Register </a>
+        <h1>Login:</h1>
+        <form action="/" method="POST">
+            <label> UserName  </label> <br>
+            <input type="text" name="username" placeholder="input username here..."><br>
+    
+    
+            <label> Password  </label> <br>
+            <input type="password" name="password" placeholder="input password here..."><br>
+    
+            <input type="submit">
+        </form>
+
+    </div>
+</body>
+</html>

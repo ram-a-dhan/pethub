@@ -2,6 +2,37 @@ const { Admin, Pet, Adopter, AdopterPet } = require('../models')
 
 class Controller{
 
+    //=================================== LOGIN  =====================================================================================================
+    static loginForm (req,res){
+        res.render('home1.ejs')
+    }
+
+    
+    static loginAdmin(req, res) {
+        console.log('ini login admin')  
+        let adminData = { 
+            username: req.body.username,
+            password: req.body.password
+        }
+        console.log(adminData)
+        Admin.findOne({ where: adminData })
+        .then(data => {
+            if(data){
+                req.session.user = {
+                    username:data.username,
+                    levelUser:data.levelUser,
+                    userId:data.id
+                }
+                
+                res.redirect('/admin')
+            }
+        })
+        .catch(err => {
+            console.log('gak masuk')
+            res.send(err)
+        })
+    }
+
     ////=========================== SHOW ALL PETS  =====================================================================================================
         
 

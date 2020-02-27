@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('partials/style') %>
+</head>
+<body>
+    <h1>Welcome Stranger</h1>
+
+    <div class="container mx-auto">
+
+        <form method="POST" action="/user/register">
+            <label>Username : </label><br>
+            <input type="text" name="username" placeholder="your username here..."><br>
+    
+            <label> Password: </label><br>
+            <input type="password" name="password" placeholder="your password here..."><br>
+            
+            <label> Email: </label><br>
+            <input type="email" name="email" placeholder="your password here..."><br>
+    
+            <label> Name: </label><br>
+            <input type="text" name="name" placeholder="your name here..."><br>
+    
+            <label> Addres: </label><br>
+            <input type="address" name="address" placeholder="your name here..."><br>
+    
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
