@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PetHub</title>
+    <%- include('partials/style') %>
 </head>
 <body>
     <h1>Welcome to PetHub</h1>
     <h3>Login as Admin</h3>
-    <form action="/loginadmin" method="post">
+    <form action="/adminLogin" method="POST">
     <label>Username</label>
     <input type="text" name="username">
     <label>Password</label>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Assignment</title>
+    <%- include('partials/style') %>
+</head>
+<body>
+    <div class="container mx-auto">
+        <h1 style="text-align: center;">Choose answer that describe you most!</h1>
+        <form method="POST" action="/user/quizpage">
+        <div class="row">
+        <div class="col" >
+            <label>I prefer pet that doesn't require alot of petting.</label><br>
+            <select name="independentA">
+                <option value=0> No </option>
+                <option value=1> Yes </option>
+            </select><br>
+    
+            <label> I left my pet more than 6hr everyday</label><br>
+            <select name="independentB">
+                <option value=1> Yes </option>
+                <option value=0> No </option>
+            </select><br>
+    
+            <label> I'd Like to spend >20mins to play with pet</label><br>
+            <select name="independentC">
+                <option value=0> Yes </option>
+                <option value=1> No </option>
+            </select><br>
+    
+            <!-- PERTANYAAN TEMPAT TINGGAL -->
+    
+            <label> I Live in a small place</label><br>
+            <select name="spaciousA">
+                <option value=1> Yes </option>
+                <option value=0> No </option>
+            </select><br>
+            <label> My pet could play around the house</label><br>
+            <select name="spaciousB">
+                <option value=1> Yes </option>
+                <option value=0> No </option>
+            </select><br>
+        </div>
+        <div class="col">
+
+           
+    
+            <label> My pet can play in my yard</label><br>
+            <select name="spaciousC">
+                <option value=1> Yes </option>
+                <option value=0> No </option>
+            </select><br>
+    
+            <!-- PERTANYAAN FRIENDLY -->
+    
+            <label> I lived with more than 4 people</label><br>
+            <select name="friendlyA">
+                <option value=1> Yes </option>
+                <option value=0> No </option>
+            </select><br>
+    
+            <label> I will bring my pet to a party</label><br>
+            <select name="friendlyB">
+                <option value=1> Yes </option>
+                <option value=0> No </option>
+            </select><br>
+    
+            <label> I often walk my pet</label><br>
+            <select name="friendlyC">
+                <option value=1> Yes </option>
+                <option value=0> No </option>
+            </select><br>
+        </div>
+
+    
+        
+    </div>
+</div>
+<br>
+<div class="container mx-auto">
+    <input type="submit">
+</form>
+</div>
+</body>
+</html>

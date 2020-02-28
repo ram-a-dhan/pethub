@@ -15,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   Pet.associate = function(models) {
     // associations can be defined here
     Pet.belongsToMany(models.Adopter, {through :'AdopterPet'})
+    Pet.hasMany(models.AdopterPet, {foreignKey:'PetId'})
   };
   return Pet;
 };

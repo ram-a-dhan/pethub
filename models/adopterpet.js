@@ -6,6 +6,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   AdopterPet.associate = function(models) {
     // associations can be defined here
+    AdopterPet.belongsTo(models.Adopter , {foreignKey:'AdopterId'})
+    AdopterPet.belongsTo(models.Pet , {foreignKey:'PetId'})
   };
   return AdopterPet;
 };
